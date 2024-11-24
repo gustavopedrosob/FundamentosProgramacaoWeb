@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar bright">
+        <a href="index.html"><span class="material-icons-outlined">home</span>Pagina Inicial</a>
+        <a class="dark"><span class="material-icons-outlined">newspaper</span>Postagens</a>
+        <a href="contact.html"><span class="material-icons-outlined">call</span>Contato</a>
+        <a href="about.html"><span class="material-icons-outlined">info</span>Sobre</a>
+    </div>
+
+    <div class="content bright">
+        <h1>Introdução ao HTML</h1>
+
+        <p>Bem-vindo à nossa seção de <strong>Postagens</strong>! Se você está começando a aprender sobre desenvolvimento web, um ótimo ponto de partida é entender o <strong>HTML</strong> (Hypertext Markup Language), que é a linguagem fundamental para criar páginas na web. Vamos te guiar pelos conceitos básicos!</p>
+    
+        <h2>O que é HTML?</h2>
+
+        <img src="imgs/1590410787863.jpeg">
+
+        <p>O HTML é a <strong>linguagem de marcação</strong> usada para estruturar o conteúdo de uma página web. Ele permite definir o que é exibido no navegador, como textos, imagens, links e outros elementos interativos.</p>
+        <p>Em HTML, usamos <strong>tags</strong> para identificar diferentes tipos de conteúdo e dar significado a ele. Cada tag possui uma função específica, e ao combiná-las de maneira lógica, conseguimos criar páginas completas.</p>
+    
+        <h2>Estrutura Básica de uma Página HTML</h2>
+        <p>Uma página HTML é composta por uma estrutura básica que inclui algumas tags essenciais. Aqui está um exemplo simples:</p>
+        
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Minha Primeira Página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+                &lt;p&gt;Bem-vindo ao meu site. Este é um exemplo básico de HTML.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </textarea>
+        </div>
+    
+        <h2>Explicando as Tags</h2>
+        <ul>
+            <li><strong>&lt;!DOCTYPE html&gt;</strong>: Informa ao navegador que estamos usando HTML5.</li>
+            <li><strong>&lt;html&gt;</strong>: A tag principal que envolve toda a página HTML.</li>
+            <li><strong>&lt;head&gt;</strong>: Contém metadados sobre a página, como o título e a codificação de caracteres.</li>
+            <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: Define a codificação de caracteres para garantir que textos em português e outros idiomas sejam exibidos corretamente.</li>
+            <li><strong>&lt;title&gt;</strong>: O título da página, que aparece na aba do navegador.</li>
+            <li><strong>&lt;body&gt;</strong>: Contém o conteúdo visível da página.</li>
+            <li><strong>&lt;h1&gt;</strong>: A tag para o título principal da página (números mais baixos em <em>h</em> significam maior importância no título).</li>
+            <li><strong>&lt;p&gt;</strong>: A tag de parágrafo, usada para criar blocos de texto.</li>
+        </ul>
+    
+        <h2>Adicionando Outros Elementos</h2>
+        <p>Além de texto, você também pode adicionar links, imagens e listas. Aqui estão alguns exemplos de como fazer isso:</p>
+    
+        <h3>Adicionar um link:</h3>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;a href="https://www.exemplo.com"&gt;Clique aqui para visitar nosso site!&lt;/a&gt;
+            </textarea>
+        </div>
+    
+        <h3>Adicionar uma imagem:</h3>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
+            </textarea>
+        </div>
+    
+        <h3>Criar uma lista:</h3>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;ul&gt;
+                &lt;li&gt;Primeiro item&lt;/li&gt;
+                &lt;li&gt;Segundo item&lt;/li&gt;
+                &lt;li&gt;Terceiro item&lt;/li&gt;
+            &lt;/ul&gt;
+            </textarea>
+        </div>
+    
+        <h2>Como Funciona a Formatação?</h2>
+        <p>O HTML sozinho não faz a formatação visual da página. Para isso, usamos <strong>CSS</strong> (Cascading Style Sheets). O HTML define a estrutura, e o CSS aplica estilos como cores, fontes e layouts. Em breve, abordaremos como usar CSS para deixar sua página ainda mais bonita!</p>
+    
+        <h2>Conclusão</h2>
+        <p>Agora você tem uma ideia básica de como o HTML funciona. Ele é a espinha dorsal de todas as páginas web e é um ótimo ponto de partida para quem deseja criar sites. Continue praticando e explorando novas tags e recursos do HTML!</p>
+
+        <h1>Introdução ao CSS</h1>
+
+        <p>Bem-vindo à nossa seção de <strong>Postagens</strong>! Se você já aprendeu um pouco sobre HTML, agora é hora de dar um passo adiante e aprender sobre o <strong>CSS</strong> (Cascading Style Sheets), que é a linguagem usada para estilizar páginas web.</p>
+    
+        <h2>O que é CSS?</h2>
+
+        <img src="imgs/geradores-codigos-CSS.jpg.webp">
+
+        <p>O CSS é uma linguagem usada para descrever a apresentação de um documento HTML. Ele permite controlar aspectos como cores, fontes, espaçamentos, alinhamentos, tamanhos e muito mais.</p>
+        <p>Com o CSS, você pode melhorar a aparência das páginas HTML, tornando-as mais atraentes e fáceis de usar.</p>
+    
+        <h2>Estrutura Básica de um Código CSS</h2>
+        <p>O CSS é composto por regras, e cada regra contém três partes principais:</p>
+        <ul>
+            <li><strong>Seletores:</strong> Indicam o elemento HTML que será estilizado.</li>
+            <li><strong>Propriedades:</strong> São os aspectos do elemento que você deseja alterar, como cor ou fonte.</li>
+            <li><strong>Valores:</strong> Definem o valor que a propriedade deve ter, como uma cor específica ou um tamanho de fonte.</li>
+        </ul>
+    
+        <p>Abaixo está um exemplo simples de código CSS:</p>
+    
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            h1 {
+                color: blue;
+                font-size: 24px;
+                text-align: center;
+            }
+            </textarea>
+        </div>
+    
+        <h3>Explicando o Exemplo</h3>
+        <ul>
+            <li><strong>h1</strong>: O seletor, que indica que estamos estilizando os títulos <code>&lt;h1&gt;</code>.</li>
+            <li><strong>color: blue;</strong>: A propriedade <strong>color</strong> define a cor do texto. O valor é <strong>blue</strong> (azul).</li>
+            <li><strong>font-size: 24px;</strong>: A propriedade <strong>font-size</strong> define o tamanho da fonte. O valor é <strong>24px</strong> (24 pixels).</li>
+            <li><strong>text-align: center;</strong>: A propriedade <strong>text-align</strong> alinha o texto ao centro.</li>
+        </ul>
+    
+        <h2>Adicionando CSS ao seu HTML</h2>
+        <p>Existem três maneiras de adicionar CSS a uma página HTML:</p>
+        <ul>
+            <li><strong>CSS inline:</strong> Dentro de uma tag HTML específica, usando o atributo <code>style</code>.</li>
+            <li><strong>CSS interno:</strong> Dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho da página HTML.</li>
+            <li><strong>CSS externo:</strong> Em um arquivo separado, que é vinculado à página HTML.</li>
+        </ul>
+    
+        <h3>Exemplo de CSS Interno:</h3>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;style&gt;
+                p {
+                    color: green;
+                    font-size: 18px;
+                }
+            &lt;/style&gt;
+            </textarea>
+        </div>
+    
+        <h2>CSS Externo</h2>
+        <p>A forma mais comum e recomendada de usar CSS é através de arquivos externos. Isso mantém o HTML limpo e organiza o código de forma mais eficiente.</p>
+    
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+            </textarea>
+        </div>
+    
+        <p>No exemplo acima, o arquivo <code>style.css</code> contém as regras de estilo que serão aplicadas à página HTML.</p>
+    
+        <h2>Propriedades Comuns do CSS</h2>
+        <ul>
+            <li><strong>color</strong>: Define a cor do texto.</li>
+            <li><strong>background-color</strong>: Define a cor de fundo de um elemento.</li>
+            <li><strong>font-family</strong>: Define o tipo de fonte para o texto.</li>
+            <li><strong>margin</strong>: Define o espaço fora de um elemento.</li>
+            <li><strong>padding</strong>: Define o espaço dentro de um elemento.</li>
+            <li><strong>border</strong>: Define as bordas de um elemento.</li>
+            <li><strong>width e height</strong>: Define a largura e altura de um elemento.</li>
+        </ul>
+    
+        <h2>Conclusão</h2>
+        <p>O CSS é essencial para dar estilo e tornar suas páginas HTML visualmente atraentes. Com o CSS, você pode controlar o layout e o design de maneira eficiente, criando páginas web mais bonitas e funcionais. Continue praticando e explorando as diferentes propriedades que o CSS oferece!</p>
+
+        <h1>Introdução ao JavaScript</h1>
+
+        <p>Bem-vindo à nossa seção de <strong>Postagens</strong>! Agora que você já conhece HTML e CSS, é hora de dar o próximo passo e aprender sobre o <strong>JavaScript</strong>, a linguagem de programação que traz interatividade para suas páginas web.</p>
+    
+        <h2>O que é JavaScript?</h2>
+
+        <img src="imgs/4502e0bb-14cb-4da9-845b-7083e48ccc00_1.webp">
+
+        <p>JavaScript é uma linguagem de programação usada para criar páginas web dinâmicas e interativas. Ao contrário do HTML (que define a estrutura da página) e do CSS (que define o estilo), o JavaScript permite que você adicione funcionalidades à sua página, como validação de formulários, animações, interação com o usuário e muito mais.</p>
+    
+        <h2>Estrutura Básica de um Código JavaScript</h2>
+        <p>O código JavaScript é geralmente colocado dentro da tag <code>&lt;script&gt;</code>, que pode ser inserida no cabeçalho ou no final do corpo da página HTML. Aqui está um exemplo básico de código JavaScript:</p>
+    
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;script&gt;
+                alert("Olá, Mundo!");
+            &lt;/script&gt;
+            </textarea>
+        </div>
+    
+        <p>No exemplo acima, o código cria uma janela de alerta que exibe a mensagem "Olá, Mundo!" quando a página é carregada.</p>
+    
+        <h3>Variáveis</h3>
+        <p>Em JavaScript, você pode armazenar dados em variáveis. Para declarar uma variável, usamos as palavras-chave <code>var</code>, <code>let</code> ou <code>const</code>.</p>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            let nome = "João";
+            const idade = 25;
+            </textarea>
+        </div>
+    
+        <p>Você pode usar variáveis para armazenar textos, números e outros tipos de dados. A diferença entre <code>let</code> e <code>const</code> é que a variável <code>const</code> não pode ser alterada após ser declarada.</p>
+    
+        <h3>Funções</h3>
+        <p>Funções em JavaScript são blocos de código que podem ser executados quando chamados. Aqui está um exemplo simples:</p>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            function saudacao() {
+                alert("Olá, seja bem-vindo!");
+            }
+            </textarea>
+        </div>
+    
+        <p>Para chamar a função <code>saudacao()</code>, basta escrever:</p>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            saudacao();
+            </textarea>
+        </div>
+    
+        <h3>Eventos</h3>
+        <p>JavaScript permite que você responda a interações do usuário, como cliques e pressionamentos de teclas. Isso é feito através de eventos. Aqui está um exemplo de como você pode reagir ao clique de um botão:</p>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;button onclick="saudacao()"&gt;Clique aqui&lt;/button&gt;
+            </textarea>
+        </div>
+    
+        <p>Quando o botão é clicado, a função <code>saudacao()</code> é chamada e a mensagem "Olá, seja bem-vindo!" aparece em um alerta.</p>
+    
+        <h3>Condicionais</h3>
+        <p>As estruturas condicionais permitem que você execute diferentes ações dependendo de uma condição. Aqui está um exemplo usando <code>if</code>:</p>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            let idade = 20;
+    
+            if (idade >= 18) {
+                alert("Você é maior de idade!");
+            } else {
+                alert("Você é menor de idade!");
+            }
+            </textarea>
+        </div>
+    
+        <p>Se a condição <code>idade >= 18</code> for verdadeira, o JavaScript exibe a mensagem "Você é maior de idade!". Caso contrário, a mensagem será "Você é menor de idade!".</p>
+    
+        <h2>Adicionando JavaScript ao seu HTML</h2>
+        <p>Assim como o CSS, o JavaScript pode ser adicionado ao seu HTML de três maneiras:</p>
+        <ul>
+            <li><strong>JavaScript Inline:</strong> Você pode colocar código JavaScript diretamente em atributos HTML, como <code>onclick</code> ou <code>onmouseover</code>.</li>
+            <li><strong>JavaScript Interno:</strong> Você pode adicionar o código dentro de uma tag <code>&lt;script&gt;</code> diretamente no arquivo HTML.</li>
+            <li><strong>JavaScript Externo:</strong> Você pode criar um arquivo JavaScript separado e vinculá-lo ao HTML.</li>
+        </ul>
+    
+        <h3>Exemplo de JavaScript Externo:</h3>
+        <div class="dark">
+            <button onclick="onCopyToClipboard(this)"><span class="material-icons-outlined">content_copy</span>Copiar para a clipboard</button>
+            <textarea class="code" readonly>
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+            </textarea>
+        </div>
+    
+        <p>No exemplo acima, o arquivo <code>script.js</code> contém o código JavaScript que será executado na página HTML.</p>
+    
+        <h2>Conclusão</h2>
+        <p>JavaScript é uma ferramenta poderosa que permite criar páginas web dinâmicas e interativas. Com ele, você pode adicionar funcionalidades como animações, validação de formulários, controle de eventos, manipulação do DOM (Document Object Model) e muito mais.</p>
+        <p>Continue praticando e experimentando com o JavaScript para aprender cada vez mais!</p>
+    </div>
+    <script src="js/posts.js"></script>
+</body>
+</html>
