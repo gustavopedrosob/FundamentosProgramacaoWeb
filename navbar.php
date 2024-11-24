@@ -20,7 +20,12 @@
         <!-- Navbar menu content here -->
             <?php if (isset($_SESSION['usuario'])):?>
                 <li><a><?= $_SESSION["usuario"] ?></a></li>
-                <li><a>Deslogar</a></li>
+                <li>
+                    <?php
+                    $redirect = urlencode(basename($_SERVER['SCRIPT_NAME']));
+                    echo '<a href="logoutUser.php?redirect=' . $redirect . '">Deslogar</a>';
+                    ?>
+                </li>
             <?php else:?>
                 <li><a onclick="login_modal.showModal()">Login</a></li>
                 <li><a onclick="create_login_modal.showModal()">Cadastro</a></li>
