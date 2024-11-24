@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
-    <div class="h-screen flex text-xl">
-        <div class="shadow-2xl w-1/5 bg-neutral-200">
-            <a class="font-semibold text-xl block p-3 hover:bg-emerald-900 hover:text-white" href="index.html"><span class="p-1 material-icons-outlined">home</span>Pagina Inicial</a>
-            <a class="font-semibold text-xl block p-3 hover:bg-emerald-900 hover:text-white" href="posts.html"><span class="p-1 material-icons-outlined">newspaper</span>Postagens</a>
-            <a class="font-semibold text-xl block p-3 bg-neutral-900 text-white shadow-md"><span class="p-1 material-icons-outlined">call</span>Contato</a>
-            <a class="font-semibold text-xl block p-3 hover:bg-emerald-900 hover:text-white" href="about.html"><span class="p-1 material-icons-outlined">info</span>Sobre</a>
-        </div>
-    
-        <div class="w-4/5 mx-12 space-y-4 p-4">
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="navbar bg-base-300 w-full">
+            <div class="flex-none">
+              <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-6 w-6 stroke-current">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </label>
+            </div>
+            <div class="mx-2 flex-1 px-2">ExploraWeb</div>
+            <div class="hidden flex-none lg:block">
+              <ul class="menu menu-horizontal">
+                <!-- Navbar menu content here -->
+                <li><a>Login</a></li>
+                <li><a>Cadastro</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Page content here -->
+          <div class="p-12 space-y-4">
             <p class="font-bold text-4xl underline decoration-emerald-900">Sucesso!</p>
             <p>Obrigado pelo seu envio. Recebemos suas informações com sucesso e entraremos em contato em breve.</p>
     
@@ -26,12 +49,22 @@
                 <div><strong>Telefone:</strong> <span id="displayTelephone"></span></div>
                 <div><strong>Mensagem:</strong> <span id="displayMessage"></span></div>
                 <div>
-                    <a href="index.html" class="bg-emerald-800 px-3 py-1 border-2 rounded-sm text-white hover:bg-neutral-900">Voltar para a Página Inicial</a>
+                    <a href="index.html" class="link link-accent">Voltar para a Página Inicial</a>
                 </div>
             </div>
+          </div>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-base-200 min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li><a href="index.html"><span class="p-1 material-icons-outlined">home</span>Pagina inicial</a></li>
+            <li><a href="posts.html"><span class="p-1 material-icons-outlined">newspaper</span>Postagens</a></li>
+            <li><a href="contact.html"><span class="p-1 material-icons-outlined">call</span>Contato</a></li>
+            <li><a href="about.html"><span class="p-1 material-icons-outlined">info</span>Sobre</a></li>
+          </ul>
         </div>
     </div>
     <script src="js/form.js"></script>
 </body>
 </html>
-
