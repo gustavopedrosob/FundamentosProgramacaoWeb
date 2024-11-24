@@ -18,8 +18,13 @@
     <div class="hidden flex-none lg:block">
         <ul class="menu menu-horizontal">
         <!-- Navbar menu content here -->
-        <li><a onclick="login_modal.showModal()">Login</a></li>
-        <li><a onclick="create_login_modal.showModal()">Cadastro</a></li>
+            <?php if (isset($_SESSION['usuario'])):?>
+                <li><a><?= $_SESSION["usuario"] ?></a></li>
+                <li><a>Deslogar</a></li>
+            <?php else:?>
+                <li><a onclick="login_modal.showModal()">Login</a></li>
+                <li><a onclick="create_login_modal.showModal()">Cadastro</a></li>
+            <?php endif;?>
         </ul>
     </div>
 </div>
