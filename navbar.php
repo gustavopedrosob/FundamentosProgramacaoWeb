@@ -18,8 +18,8 @@
     <div class="hidden flex-none lg:block">
         <ul class="menu menu-horizontal">
         <!-- Navbar menu content here -->
-        <li><a>Login</a></li>
-        <li><a>Cadastro</a></li>
+        <li><a onclick="login_modal.showModal()">Login</a></li>
+        <li><a onclick="create_login_modal.showModal()">Cadastro</a></li>
         </ul>
     </div>
 </div>
