@@ -20,7 +20,7 @@ require 'checkAuthentication.php';
           <!-- Navbar -->
           <?php require 'navbar.php';?>
           <!-- Page content here -->
-          <div class="p-12 space-y-4">
+          <div class="container mx-auto p-12 space-y-4">
             <p class="font-bold text-4xl underline decoration-emerald-900">Entre em Contato Conosco</p>
     
             <p>Adoraríamos ouvir sua opinião! Por favor, deixe seus dados de contato abaixo e nos avise o motivo do seu contato.</p>

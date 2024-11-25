@@ -30,7 +30,7 @@ $conn->close();
           <!-- Navbar -->
           <?php require 'navbar.php';?>
           <!-- Page content here -->
-          <div class="p-12 space-y-4">
+          <div class="container mx-auto p-12 space-y-4">
             <p class="font-bold text-4xl underline decoration-emerald-900">Sucesso!</p>
             <p>Obrigado pelo seu envio. Recebemos suas informações com sucesso e entraremos em contato em breve.</p>
     

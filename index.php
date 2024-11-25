@@ -17,7 +17,7 @@
       <!-- Navbar -->
       <?php require 'navbar.php';?>
       <!-- Page content here -->
-      <div class="p-12 space-y-4 text-xl">
+      <div class="container mx-auto p-12 space-y-4 text-xl">
         <p class="font-bold text-4xl underline decoration-emerald-900">Apresentação</p>
 
         <p>
@@ -31,7 +31,7 @@
             O <strong>NotesCode</strong> foi idealizado como parte de uma atividade acadêmica na PUCPR, mas transcende o ambiente 
             universitário para se tornar uma plataforma útil e prática. Ele é pensado para quem busca:
         </p>
-        <ul class="list-disc">
+        <ul class="indent-4 list-disc">
             <li>Dicas rápidas sobre tecnologia.</li>
             <li>Exemplos de código para resolver problemas do dia a dia.</li>
             <li>Reflexões e insights sobre desenvolvimento de software e inovações tecnológicas.</li>

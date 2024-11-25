@@ -18,11 +18,11 @@
           
           <?php require 'navbar.php';?>
           <!-- Page content here -->
-          <div class="p-12 space-y-4 text-xl">
+          <div class="container mx-auto p-12 space-y-4 text-xl">
             <p class="font-bold text-4xl underline decoration-emerald-900">Sobre o &lt;NotesCode&gt;</p>
     
             <h2 class="text-2xl">Como funciona?</h2>
-            <ul>
+            <ul class="indent-4 list-disc">
                 <li>
                     <strong>Textos curtos e diretos:</strong> Cada postagem no <strong>NotesCode</strong> é objetiva, 
                     com foco na clareza e utilidade.
@@ -36,7 +36,7 @@
             </ul>
 
             <h2 class="text-2xl">Por que o NotesCode é especial?</h2>
-            <ul class="list-disc">
+            <ul class="indent-4 list-disc">
                 <li>
                     <strong>Facilidade de Acesso:</strong> Os conteúdos são curtos e fáceis de entender, ideais para quem está 
                     começando ou deseja aprender rapidamente.
@@ -58,7 +58,7 @@
             </p>
 
             <h2 class="text-2xl">Tecnologias:</h2>
-            <ul class="list-disc">
+            <ul class="indent-4 list-disc">
                 <li>PHP</li>
                 <li>MySQL</li>
                 <li>tailwindcss e daisyui</li>

@@ -31,7 +31,7 @@ $conn->close();
             <!-- Navbar -->
             <?php require 'navbar.php';?>
             <!-- Page content here -->
-            <div class="p-12 space-y-4">
+            <div class="container mx-auto p-12 space-y-4">
                 <p class="font-bold text-4xl underline decoration-emerald-900">Editar postagem</p>
                 <?php echo '<form class="flex flex-col space-y-4" method="POST" action="editPostSubmit.php?id=' . $_GET["id"] . '">'?>
                     <?php echo '<input type="text" placeholder="Titulo" name="titulo" class="input input-bordered w-full" minlength="10" value="' . $row["titulo"] . '" required/>' ?>

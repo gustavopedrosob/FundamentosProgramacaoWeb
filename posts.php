@@ -21,7 +21,7 @@ $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
             <!-- Navbar -->
             <?php require 'navbar.php';?>
             <!-- Page content here -->
-            <div class="p-12 space-y-4">
+            <div class="container mx-auto p-12 space-y-4">
                 <?php if (isset($_SESSION["usuario"])):?>
                     <p class="font-bold text-4xl underline decoration-emerald-900">Adicionar postagem</p>
                     <form class="flex flex-col space-y-4" method="POST" action="addPost.php">
