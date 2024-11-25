@@ -11,6 +11,7 @@ if ($result) {
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
         $_SESSION['usuario'] = $row['nome'];
+        $_SESSION['email'] = $email;
         $nome = $row['nome'];
         $msg = "Usuário $nome logado com sucesso!";
     } else {

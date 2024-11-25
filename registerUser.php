@@ -10,6 +10,7 @@ $result = $conn->query("INSERT INTO usuarios (nome, email, senha) VALUES ('$nome
 
 if ($result) {
     $_SESSION['usuario'] = $nome;
+    $_SESSION['email'] = $email;
     $msg = "Cadastro do usuário $nome realizado com sucesso!";
 } else {
     session_destroy();
