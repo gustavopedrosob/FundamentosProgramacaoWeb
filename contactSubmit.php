@@ -1,4 +1,17 @@
-<?php session_start();?>
+<?php
+session_start();
+require 'checkAuthentication.php';
+$conn = new mysqli("localhost:3306", "root", "", "programacaoweb");
+
+$telefone = $conn->real_escape_string($_POST['telefone']);
+$motivo = $conn->real_escape_string($_POST['motivo']);
+$mensagem = $conn->real_escape_string($_POST['mensagem']);
+$email = $_SESSION["email"];
+
+$result = $conn->query("INSERT INTO contatos (telefone, motivo, mensagem, email) VALUES ('$telefone', '$motivo', '$mensagem', '$email')");
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,12 +35,10 @@
             <p>Obrigado pelo seu envio. Recebemos suas informações com sucesso e entraremos em contato em breve.</p>
     
             <div class="space-y-2">
-                <div><strong>Nome:</strong> <span id="displayName"></span></div>
-                <div><strong>Email:</strong> <span id="displayEmail"></span></div>
-                <div><strong>Telefone:</strong> <span id="displayTelephone"></span></div>
-                <div><strong>Mensagem:</strong> <span id="displayMessage"></span></div>
+                <div><strong>Telefone:</strong><span id="displayTelephone"> <?= $telefone ?></span></div>
+                <div><strong>Mensagem:</strong><span id="displayMessage"> <?= $mensagem ?></span></div>
                 <div>
-                    <a href="index.html" class="link link-accent">Voltar para a Página Inicial</a>
+                    <a href="index.php" class="link link-accent">Voltar para a Página Inicial</a>
                 </div>
             </div>
           </div>
@@ -36,6 +47,5 @@
           require 'sidebar.php';
         ?>
     </div>
-    <script src="js/form.js"></script>
 </body>
 </html>
