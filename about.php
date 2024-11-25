@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
-    <?php include 'modals.php';?>
+    <?php require 'modals.php';?>
     <div class="drawer">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <!-- Navbar -->
           
-          <?php include 'navbar.php';?>
+          <?php require 'navbar.php';?>
           <!-- Page content here -->
           <div class="p-12 space-y-4">
             <p class="font-bold text-4xl underline decoration-emerald-900">Sobre o ExploraWeb</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <?php 
-          include 'sidebar.php';
+          require 'sidebar.php';
         ?>
     </div>
 </body>
