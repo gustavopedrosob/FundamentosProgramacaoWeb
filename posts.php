@@ -4,7 +4,7 @@ $conn = new mysqli("localhost:3306", "root", "", "programacaoweb");
 $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
 ?>
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
