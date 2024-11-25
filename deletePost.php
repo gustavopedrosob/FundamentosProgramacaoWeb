@@ -13,6 +13,7 @@ if ($row["email"] === $_SESSION["email"]) {
     $conn->close();
     header('Location: posts.php');
 } else {
+    $conn->close();
     header('Location: index.php');
 }
 ?>
