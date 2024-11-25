@@ -1,4 +1,7 @@
-<?php session_start();?>
+<?php
+session_start();
+require 'checkAuthentication.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
