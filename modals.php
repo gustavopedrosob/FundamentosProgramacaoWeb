@@ -36,7 +36,7 @@
             </div>
             <!-- if there is a button in form, it will close the modal -->
             <button class="btn btn-primary" type="submit">Login</button>
-            <button class="btn" type="button">Fechar</button>
+            <button class="btn" type="button" onclick="login_modal.close()">Fechar</button>
         </form>
     </div>
   </div>
@@ -89,7 +89,7 @@
             </div>
             <!-- if there is a button in form, it will close the modal -->
             <button class="btn btn-primary" type="submit" >Cadastrar</button>
-            <button class="btn" type="button">Fechar</button>
+            <button class="btn" type="button" onclick="create_login_modal.close()">Fechar</button>
         </form>
     </div>
 </dialog>
