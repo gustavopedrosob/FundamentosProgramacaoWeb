@@ -22,13 +22,15 @@ $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
             <?php require 'navbar.php';?>
             <!-- Page content here -->
             <div class="p-12 space-y-4">
-                <p class="font-bold text-4xl underline decoration-emerald-900">Adicionar postagem</p>
-                <form class="flex flex-col space-y-4" method="POST" action="addPost.php">
-                    <input type="text" placeholder="Titulo" name="titulo" class="input input-bordered input-accent w-full" minlength="10" required/>
-                    <textarea placeholder="Descrição" name="descricao" class="textarea textarea-bordered textarea-lg w-full" minlength="50" required></textarea>
-                    <textarea placeholder="Código" name="codigo" class="textarea textarea-bordered textarea-lg w-full"></textarea>
-                    <button class="btn btn-primary" type="submit">Adicionar</button>
-                </form>
+                <?php if (isset($_SESSION["usuario"])):?>
+                    <p class="font-bold text-4xl underline decoration-emerald-900">Adicionar postagem</p>
+                    <form class="flex flex-col space-y-4" method="POST" action="addPost.php">
+                        <input type="text" placeholder="Titulo" name="titulo" class="input input-bordered w-full" minlength="10" required/>
+                        <textarea placeholder="Descrição" name="descricao" class="textarea textarea-bordered textarea-lg w-full" minlength="50" required></textarea>
+                        <textarea placeholder="Código" name="codigo" class="textarea textarea-bordered textarea-lg w-full"></textarea>
+                        <button class="btn btn-primary" type="submit">Adicionar</button>
+                    </form>
+                <?php endif;?>
                 <p class="font-bold text-4xl underline decoration-emerald-900">Postagens</p>
                 <?php while ($row = $result->fetch_assoc()): ?>
                     <div class="bg-base-300 p-12 rounded-xl space-y-4">
