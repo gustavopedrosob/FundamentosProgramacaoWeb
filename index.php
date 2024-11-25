@@ -17,7 +17,7 @@
       <!-- Navbar -->
       <?php require 'navbar.php';?>
       <!-- Page content here -->
-      <div class="p-12 space-y-4">
+      <div class="p-12 space-y-4 text-xl">
         <p class="font-bold text-4xl underline decoration-emerald-900">Apresentação</p>
 
         <p>
@@ -26,7 +26,7 @@
           para troca de ideias, aprendizado e inspiração para entusiastas e profissionais da área.
         </p>
 
-        <h2 class="text-xl">O que é o NotesCode?</h2>
+        <h2 class="text-2xl">O que é o NotesCode?</h2>
         <p>
             O <strong>NotesCode</strong> foi idealizado como parte de uma atividade acadêmica na PUCPR, mas transcende o ambiente 
             universitário para se tornar uma plataforma útil e prática. Ele é pensado para quem busca:

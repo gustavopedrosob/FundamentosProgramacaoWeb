@@ -18,10 +18,10 @@
           
           <?php require 'navbar.php';?>
           <!-- Page content here -->
-          <div class="p-12 space-y-4">
+          <div class="p-12 space-y-4 text-xl">
             <p class="font-bold text-4xl underline decoration-emerald-900">Sobre o &lt;NotesCode&gt;</p>
     
-            <h2 class="text-xl">Como funciona?</h2>
+            <h2 class="text-2xl">Como funciona?</h2>
             <ul>
                 <li>
                     <strong>Textos curtos e diretos:</strong> Cada postagem no <strong>NotesCode</strong> é objetiva, 
@@ -35,7 +35,7 @@
                 </li>
             </ul>
 
-            <h2 class="text-xl">Por que o NotesCode é especial?</h2>
+            <h2 class="text-2xl">Por que o NotesCode é especial?</h2>
             <ul class="list-disc">
                 <li>
                     <strong>Facilidade de Acesso:</strong> Os conteúdos são curtos e fáceis de entender, ideais para quem está 
@@ -50,14 +50,14 @@
                 </li>
             </ul>
 
-            <h2 class="text-xl">Futuro do NotesCode</h2>
+            <h2 class="text-2xl">Futuro do NotesCode</h2>
             <p>
                 Embora o projeto tenha nascido como parte de uma atividade acadêmica, ele tem potencial para crescer e se tornar uma 
                 comunidade vibrante de troca de conhecimentos. A ideia é expandir para incluir mais colaboradores, integrar ferramentas 
                 interativas e, eventualmente, permitir que a própria comunidade compartilhe seus próprios textos e códigos.
             </p>
 
-            <h2 class="text-xl">Tecnologias:</h2>
+            <h2 class="text-2xl">Tecnologias:</h2>
             <ul class="list-disc">
                 <li>PHP</li>
                 <li>MySQL</li>

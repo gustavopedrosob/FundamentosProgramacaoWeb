@@ -19,7 +19,7 @@
         <ul class="menu menu-horizontal">
         <!-- Navbar menu content here -->
             <?php if (isset($_SESSION['usuario'])):?>
-                <li><a><?= $_SESSION["usuario"] ?></a></li>
+                <li class="disabled"><a><?= $_SESSION["usuario"] ?></a></li>
                 <li>
                     <?php
                     $redirect = urlencode(basename($_SERVER['SCRIPT_NAME']));
