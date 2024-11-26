@@ -12,6 +12,7 @@ $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/github-dark.css" data-noprefix />
 </head>
 <body>
     <?php require 'modals.php';?>
@@ -68,6 +69,8 @@ $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
           require 'sidebar.php';
         ?>
     </div>
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
 
