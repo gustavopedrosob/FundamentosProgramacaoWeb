@@ -1,7 +1,7 @@
 <?php
 session_start();
 $conn = new mysqli("localhost:3306", "root", "", "programacaoweb");
-$result = $conn->query("SELECT * FROM postagens LIMIT 10;");
+$result = $conn->query("SELECT id, titulo, descricao, codigo, email, DATE_FORMAT(data_insercao, '%d/%m/%Y %H:%i:%s') as data_insercao, DATE_FORMAT(data_edicao, '%d/%m/%Y %H:%i:%s') as data_edicao FROM postagens LIMIT 10;");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
@@ -69,7 +69,7 @@ $result = $conn->query("SELECT * FROM postagens LIMIT 10;");
                             <pre><code><?= htmlspecialchars($row["codigo"]) ?></code></pre>
                         </div>
                         <div class="pt-12">
-                            <p class="float-left"><?= $row["email"] ?></p>
+                            <p class="float-left">Publicado por <?= $row["email"] ?></p>
                             <p class="float-right"><?= $row["data_insercao"] ?></p>
                         </div>
                     </div>
