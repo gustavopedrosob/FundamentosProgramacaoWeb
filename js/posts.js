@@ -5,3 +5,10 @@ function onCopyToClipboard(element) {
     const selection = window.getSelection();
     selection.removeAllRanges();
 }
+
+
+function onDeletePost(modal, id) {
+    modal.showModal();
+    const a = modal.querySelector("a");
+    a.href = `deletePost.php?id=${id}`;
+}
